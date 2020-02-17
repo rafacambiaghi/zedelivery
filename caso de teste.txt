@@ -1,0 +1,7 @@
+1 - Validar aviso de maior idade ao acessar a página principal
+2 - Validar login e senha válidos
+3 - Validar login e senha inválidas
+
+1 - A importância para não ter um perigo de pessoas menores de idade entrarem na web e também fica um aviso que a pessoa pode se por em risco, então este aviso é importante o sistema estar respondendo
+
+2- Escolhi ambos como login e senha validos e invalidos pois o consumidor pode ter problemas ao se logar na loja virtual, onde os dados dela estão. Vale ressaltar que deverá ter um link de recuperação de senha.
