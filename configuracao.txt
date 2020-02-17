@@ -1,0 +1,23 @@
+package AutomacaoConfig;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Configuracao {
+
+	public static WebDriver driver;
+
+	public String caminhoDriver = "lib/chromedriver/chromedriver.exe";
+
+	public Configuracao() {
+
+		System.setProperty("webdriver.chrome.driver", caminhoDriver);
+		driver = new ChromeDriver();
+
+	}
+
+	public static WebDriver getDriver() {
+
+		return driver;
+	}
+	}

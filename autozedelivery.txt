@@ -1,0 +1,18 @@
+package Automacao;
+
+import org.openqa.selenium.By;
+import firefox.firefoxopen;
+import AutomacaoPage.PageObjects;
+
+
+public class AutoZeDeliveryr extends firefoxopen {
+
+	PageObjects bp = new PageObjects(getDriver());
+
+	public void acessarAmbiente() {
+		getDriver().get("https://www.ze.delivery/");
+		bp.aguardar(2000);
+		getDriver().manage().window().maximize();
+	}
+	
+	

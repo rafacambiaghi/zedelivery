@@ -1,0 +1,33 @@
+package AutomacaoPage;
+
+import org.openqa.selenium.WebDriver;
+
+public class PageObjects {
+	
+	public WebDriver driver;
+	
+	public PageObjects(WebDriver driver) {
+		this.driver = driver;
+	}
+	public void aguardar(int seg) {
+		try {
+			Thread.sleep(seg);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	public void fecharNavegador() {
+
+		aguardar(3000);
+		driver.close();
+		driver.quit();
+	}
+	public void verifcarJanela() {
+		for (String handle : driver.getWindowHandles()) {
+
+			driver.switchTo().window(handle);
+
+		}
+	}
+
+}
